@@ -31,7 +31,7 @@ function get_content($content)
       <input value='Search' type='submit'/>
     </form>";
 
-    if (isset($_POST['submit']) && (!empty($_POST["searchQuery"]))) {
+    if (isset($_POST['searchQuery']) && !empty($_POST["searchQuery"])) {
       $searchQuery = $_POST['searchQuery'];
       do_search($searchQuery);
     }
