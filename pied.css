@@ -1,10 +1,20 @@
 .pied-search-form {
   display: flex;
   padding: 3rem;
-  background-color: rgba(255,255,255,0.25);
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 0.5rem;
 }
 
 .pied-search-results {
   padding: 3rem;
-  background-color:  rgba(255,255,255,0.25);
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 0.5rem;
 }
+.pied-search-result-item {
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  margin: 1rem;
+}
+.pied-search-result-item:last-child{
+  border-bottom: none;
+}
+
