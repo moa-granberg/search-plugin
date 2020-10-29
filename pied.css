@@ -1,0 +1,10 @@
+.pied-search-form {
+  display: flex;
+  padding: 3rem;
+  background-color: rgba(255,255,255,0.25);
+}
+
+.pied-search-results {
+  padding: 3rem;
+  background-color:  rgba(255,255,255,0.25);
+}
