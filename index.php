@@ -7,7 +7,7 @@ function do_search($searchQuery)
 {
   global $wpdb;
   $table_name = $wpdb->prefix . "posts";
-  $results = $wpdb->get_results("SELECT * FROM $table_name WHERE post_content LIKE '%$searchQuery%' AND post_status LIKE 'publish'");
+  $results = $wpdb->get_results("SELECT * FROM $table_name WHERE (post_content LIKE '%$searchQuery%' OR post_title LIKE '%$searchQuery%') AND post_status LIKE 'publish'");
 
   foreach ($results as $row) {
     $permalink = get_permalink($row->ID);
