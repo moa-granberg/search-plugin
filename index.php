@@ -20,7 +20,7 @@ function do_search($searchQuery)
 
 function get_content($content)
 {
-  $searchBtn = "<p><a href='index.php?gogosearch=true'><button>Search...</button></a></p>";
+  $searchBtn = "<p><a href='index.php?gogosearch=true'><button>Search</button></a></p>";
   $searchInputField = "";
 
   if (isset($_GET["gogosearch"])) {
